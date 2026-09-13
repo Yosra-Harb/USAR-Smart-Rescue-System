@@ -1,0 +1,32 @@
+function radarValue = radarSimulation(scenario, probe)
+%% ============================================================
+% Function Name : radarSimulation
+%
+% Description :
+% محاكاة استجابة رادار UWB للكشف عن الضحية.
+% يعتمد النموذج على:
+% - Vital Signs Strength
+% - Attenuation
+% - Burial Depth
+% - Environmental Noise
+%% ============================================================
+
+r = probe.position(1);
+c = probe.position(2);
+
+A = scenario.environment.attenuation(r,c);
+
+B = scenario.environment.burialDepth(r,c);
+
+N = scenario.environment.noise(r,c);
+
+V = scenario.environment.vitalSigns(r,c);
+
+radarValue = ...
+    V .* exp(-2*A) .* ...
+    exp(-1.5*B) .* ...
+    (1-N);
+
+radarValue = max(0,min(1,radarValue));
+
+end

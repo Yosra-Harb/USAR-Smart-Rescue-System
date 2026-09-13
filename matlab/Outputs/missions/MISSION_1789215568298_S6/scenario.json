@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.0",
+  "contractType": "scenario",
+  "missionId": "MISSION_1789215568298_S6",
+  "scenarioType": "WeakVitalSigns",
+  "randomSeed": 6,
+  "gridSize": [
+    50,
+    50
+  ],
+  "parameters": {
+    "numVictims": 1,
+    "debrisDensity": 0.5,
+    "noiseLevel": 0.3,
+    "burialDepth": 0.5,
+    "vitalStrength": 0.25
+  },
+  "environmentSummary": {
+    "meanDebris": 0.16511553529281933,
+    "meanNoise": 0.28056746005048677,
+    "obstacleFraction": 0.1668,
+    "meanAccessibility": 0.707655331224711,
+    "meanRisk": 0.19991955919083748
+  },
+  "entryPoint": {
+    "row": 50,
+    "column": 1,
+    "x": 1,
+    "y": 50
+  },
+  "exitPoint": {
+    "row": 1,
+    "column": 50,
+    "x": 50,
+    "y": 1
+  },
+  "groundTruthHidden": true
+}

@@ -1,0 +1,17 @@
+.mission-status-strip {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+}
+.status-card {
+  min-width: 0;
+  padding: 14px 15px;
+  border: 1px solid var(--border);
+  border-radius: 11px;
+  background: linear-gradient(180deg, #101a2b, #0b1321);
+  box-shadow: 0 10px 26px rgba(0,0,0,.18);
+}
+.status-card span { display: block; margin-bottom: 7px; color: var(--muted); font-size: .72rem; text-transform: uppercase; letter-spacing: .06em; }
+.status-card strong { display: block; color: var(--text); font-size: 1rem; font-variant-numeric: tabular-nums; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+@media (max-width: 1200px) { .mission-status-strip { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 700px) { .mission-status-strip { grid-template-columns: 1fr 1fr; } }

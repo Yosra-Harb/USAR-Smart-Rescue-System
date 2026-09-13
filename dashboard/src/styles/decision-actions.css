@@ -1,0 +1,73 @@
+.decision-actions{
+
+    display:flex;
+
+    gap:12px;
+
+    margin-top:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.decision-actions button{
+
+    padding:12px 20px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+    transition:.2s;
+
+}
+
+.primary-action{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+.primary-action:hover{
+
+    background:#1d4ed8;
+
+}
+
+.secondary-action{
+
+    background:#16a34a;
+
+    color:white;
+
+}
+
+.secondary-action:hover{
+
+    background:#15803d;
+
+}
+
+.outline-action{
+
+    background:white;
+
+    border:1px solid #cbd5e1 !important;
+
+    color:#334155;
+
+}
+
+.outline-action:hover{
+
+    background:#f8fafc;
+
+}

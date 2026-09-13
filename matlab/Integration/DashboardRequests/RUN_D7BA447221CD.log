@@ -1,0 +1,57 @@
+
+====================================================
+DASHBOARD-STARTED USAR MISSION
+====================================================
+Request File: C:/Users/TOP/Downloads/USAR_EndToEnd_v2_1_RouteCandidate/matlab/Integration/DashboardRequests/RUN_D7BA447221CD.json
+Scenario    : WeakVitalSigns
+Max Vital = 0.25
+Scenario validation passed successfully.
+ 
+========== FUSION HISTORY ==========
+Fusion History Size: 2114
+Maximum Fusion Score: 0.13995
+Mean Fusion Score: 0.014611
+====================================
+ 
+========== PERFORMANCE REPORT ==========
+Ground Truth Victims       : 1
+System Detections          : 1
+True Positives             : 1
+False Positives            : 0
+False Negatives            : 0
+Critical Success Index     : 1.0000
+Precision                  : 1.0000
+Recall                     : 1.0000
+F1 Score                   : 1.0000
+False Discovery Rate       : 0.0000
+False Negative Rate        : 0.0000
+False Alarms Per Mission   : 0
+Conventional FAR          : N/A (TN is undefined)
+Conventional Accuracy     : N/A (TN is undefined)
+Localization Error          : 0.0000
+Mean Priority               : 0.72540
+Maximum Priority            : 0.87744
+Minimum Priority            : 0.33012
+========================================
+ 
+========== DETECTED VICTIMS ==========
+Number of Valid Victims: 1
+ 
+Victim ID: 1
+Position: 27  39
+Vitality Index: 0.37336
+Priority Score: 0.62141
+Priority Level: HIGH
+Rescue Rank: 1
+Reachable: true
+Shortest Path Length: 51.6274
+Recommended Path Length: 51.6274
+Mean Route Risk: 0.1781
+Independent View Count: 20
+Raw Association Count: 99
+======================================
+
+====================================================
+DASHBOARD MISSION COMPLETED
+Mission ID: MISSION_1789215568298_S6
+====================================================

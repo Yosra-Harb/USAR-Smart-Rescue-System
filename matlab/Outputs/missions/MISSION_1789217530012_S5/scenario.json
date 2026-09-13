@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.0",
+  "contractType": "scenario",
+  "missionId": "MISSION_1789217530012_S5",
+  "scenarioType": "MultipleVictims",
+  "randomSeed": 5,
+  "gridSize": [
+    50,
+    50
+  ],
+  "parameters": {
+    "numVictims": 5,
+    "debrisDensity": 0.5,
+    "noiseLevel": 0.4,
+    "burialDepth": 0.5,
+    "vitalStrength": 0.7
+  },
+  "environmentSummary": {
+    "meanDebris": 0.1788747778828888,
+    "meanNoise": 0.37128931777409935,
+    "obstacleFraction": 0.1564,
+    "meanAccessibility": 0.70540291357168849,
+    "meanRisk": 0.23435166206196303
+  },
+  "entryPoint": {
+    "row": 50,
+    "column": 1,
+    "x": 1,
+    "y": 50
+  },
+  "exitPoint": {
+    "row": 1,
+    "column": 50,
+    "x": 50,
+    "y": 1
+  },
+  "groundTruthHidden": true
+}

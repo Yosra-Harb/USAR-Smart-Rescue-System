@@ -1,0 +1,121 @@
+function probe = ...
+    updateVictimDatabase( ...
+    probe, ...
+    vitalityPacket, ...
+    priorityPacket)
+%% ============================================================
+% Function Name : updateVictimDatabase
+%
+% Description :
+% تحديث قاعدة بيانات الضحايا المكتشفين.
+%% ============================================================
+
+if ~vitalityPacket.isVictimDetected
+    return;
+end
+
+if vitalityPacket.temporalStability < 0.80
+    return;
+end
+
+if priorityPacket.priorityScore < 0.55
+    return;
+end
+
+if priorityPacket.priorityScore < 0.45
+    return;
+end
+
+if vitalityPacket.vitalityIndex < 0.65
+    return;
+end
+
+
+position = ...
+    vitalityPacket.estimatedPosition;
+
+if isempty(position)
+    return;
+end
+
+distanceThreshold = 8;
+
+victimFound = false;
+
+for k = 1:length(probe.memory.detectedVictims)
+
+    oldPosition = ...
+        probe.memory.detectedVictims(k).position;
+
+    distance = sqrt( ...
+        (position(1)-oldPosition(1))^2 + ...
+        (position(2)-oldPosition(2))^2);
+
+    if distance <= distanceThreshold
+
+        probe.memory.detectedVictims(k).position = ...
+            position;
+
+        probe.memory.detectedVictims(k).vitalityIndex = ...
+            vitalityPacket.vitalityIndex;
+
+        probe.memory.detectedVictims(k).priorityScore = ...
+            priorityPacket.priorityScore;
+
+        probe.memory.detectedVictims(k).priorityLevel = ...
+            priorityPacket.priorityLevel;
+
+        probe.memory.detectedVictims(k).lastUpdateTime = ...
+            datetime("now");
+
+        probe.memory.detectedVictims(k).detectionCount = ...
+            probe.memory.detectedVictims(k).detectionCount + 1;
+
+        disp(['Victim ', ...
+              num2str( ...
+              probe.memory.detectedVictims(k).id), ...
+              ' Updated']);
+
+        victimFound = true;
+
+        break;
+
+    end
+
+end
+
+if ~victimFound
+
+    victimID = ...
+        length(probe.memory.detectedVictims) + 1;
+
+    newVictim = ...
+        registerVictim( ...
+            victimID, ...
+            vitalityPacket, ...
+            priorityPacket);
+
+    probe.memory.detectedVictims = ...
+        [probe.memory.detectedVictims ; newVictim];
+
+    disp(' ');
+    disp('==============================');
+    disp(['NEW VICTIM REGISTERED : ID = ', ...
+          num2str(victimID)]);
+    disp(['Position : ', ...
+          num2str(position)]);
+    disp(['Vitality : ', ...
+          num2str(vitalityPacket.vitalityIndex)]);
+    disp(['Priority : ', ...
+          num2str(priorityPacket.priorityScore)]);
+    disp(['Level : ', ...
+          char(priorityPacket.priorityLevel)]);
+    disp('==============================');
+    disp(' ');
+
+for k = 1:length(probe.memory.detectedVictims)
+
+    disp(probe.memory.detectedVictims(k).position)
+
+end
+end

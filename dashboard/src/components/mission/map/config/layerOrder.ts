@@ -1,0 +1,14 @@
+export const LAYER_ORDER = {
+  BACKGROUND: 0,
+  GRID: 10,
+  OBSTACLES: 12,
+  GROUND_TRUTH: 48,
+  RESCUE_ROUTE: 42,
+  VICTIMS: 45,
+  TEAMS: 30,
+  ROBOTS: 40,
+  DRONES: 50,
+  HAZARDS: 60,
+  HEATMAP: 70,
+  UI: 100,
+} as const;

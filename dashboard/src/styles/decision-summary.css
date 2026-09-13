@@ -1,0 +1,5 @@
+.decision-summary { display: grid; grid-template-columns: repeat(2,1fr); gap: 10px; }
+.summary-item { display: flex; flex-direction: column; padding: 12px; border: 1px solid var(--border); border-radius: 9px; background: #0b1524; }
+.summary-label { font-size: .7rem; color: var(--muted); margin-bottom: 6px; text-transform: uppercase; letter-spacing: .05em; }
+.summary-value { font-size: .96rem; font-weight: 680; color: var(--text); }
+.summary-value.high { color: #fca5a5; }

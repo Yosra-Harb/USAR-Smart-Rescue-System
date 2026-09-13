@@ -1,0 +1,24 @@
+function acousticValue = acousticSimulation(scenario, probe)
+%% ============================================================
+% Function Name : acousticSimulation
+%
+% Description :
+% محاكاة الحساس الصوتي.
+%% ============================================================
+
+r = probe.position(1);
+c = probe.position(2);
+
+D = scenario.environment.debris(r,c);
+
+N = scenario.environment.noise(r,c);
+
+V = scenario.environment.vitalSigns(r,c);
+
+acousticValue = ...
+    V .* exp(-2*N) .* ...
+    exp(-1.5*D);
+
+acousticValue = max(0,min(1,acousticValue));
+
+end

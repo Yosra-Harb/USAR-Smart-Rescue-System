@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.0",
+  "contractType": "scenario",
+  "missionId": "MISSION_1789303929296_S1",
+  "scenarioType": "Ideal",
+  "randomSeed": 1,
+  "gridSize": [
+    50,
+    50
+  ],
+  "parameters": {
+    "numVictims": 1,
+    "debrisDensity": 0.1,
+    "noiseLevel": 0.1,
+    "burialDepth": 0.2,
+    "vitalStrength": 0.9
+  },
+  "environmentSummary": {
+    "meanDebris": 0.022770201418648214,
+    "meanNoise": 0.17835750755599525,
+    "obstacleFraction": 0.1164,
+    "meanAccessibility": 0.86419995808952266,
+    "meanRisk": 0.078809373117987483
+  },
+  "entryPoint": {
+    "row": 50,
+    "column": 1,
+    "x": 1,
+    "y": 50
+  },
+  "exitPoint": {
+    "row": 1,
+    "column": 50,
+    "x": 50,
+    "y": 1
+  },
+  "groundTruthHidden": true
+}

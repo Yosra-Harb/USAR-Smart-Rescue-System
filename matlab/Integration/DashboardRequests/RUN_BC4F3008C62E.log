@@ -1,0 +1,109 @@
+
+====================================================
+DASHBOARD-STARTED USAR MISSION
+====================================================
+Request File: C:/Users/TOP/Downloads/USAR_EndToEnd_v2_1_RouteCandidate/matlab/Integration/DashboardRequests/RUN_BC4F3008C62E.json
+Scenario    : Custom
+Max Vital = 1
+Scenario validation passed successfully.
+ 
+========== FUSION HISTORY ==========
+Fusion History Size: 2007
+Maximum Fusion Score: 0.47531
+Mean Fusion Score: 0.065185
+====================================
+ 
+========== PERFORMANCE REPORT ==========
+Ground Truth Victims       : 5
+System Detections          : 5
+True Positives             : 5
+False Positives            : 0
+False Negatives            : 0
+Critical Success Index     : 1.0000
+Precision                  : 1.0000
+Recall                     : 1.0000
+F1 Score                   : 1.0000
+False Discovery Rate       : 0.0000
+False Negative Rate        : 0.0000
+False Alarms Per Mission   : 0
+Conventional FAR          : N/A (TN is undefined)
+Conventional Accuracy     : N/A (TN is undefined)
+Localization Error          : 0.8472
+Mean Priority               : 0.62066
+Maximum Priority            : 0.88703
+Minimum Priority            : 0.19321
+========================================
+ 
+========== DETECTED VICTIMS ==========
+Number of Valid Victims: 5
+ 
+Victim ID: 20
+Position: 27  19
+Vitality Index: 0.34637
+Priority Score: 0.66649
+Priority Level: HIGH
+Rescue Rank: 1
+Reachable: true
+Shortest Path Length: 30.4558
+Recommended Path Length: 40.8995
+Mean Route Risk: 0.14887
+Independent View Count: 17
+Raw Association Count: 99
+ 
+Victim ID: 4
+Position: 33  42
+Vitality Index: 0.28317
+Priority Score: 0.63064
+Priority Level: HIGH
+Rescue Rank: 2
+Reachable: true
+Shortest Path Length: 49.799
+Recommended Path Length: 55.2132
+Mean Route Risk: 0.27948
+Independent View Count: 19
+Raw Association Count: 76
+ 
+Victim ID: 16
+Position: 11  21
+Vitality Index: 0.44151
+Priority Score: 0.61005
+Priority Level: HIGH
+Rescue Rank: 3
+Reachable: true
+Shortest Path Length: 47.2843
+Recommended Path Length: 47.8701
+Mean Route Risk: 0.14274
+Independent View Count: 29
+Raw Association Count: 163
+ 
+Victim ID: 2
+Position: 42  30
+Vitality Index: 0.44142
+Priority Score: 0.56074
+Priority Level: HIGH
+Rescue Rank: 4
+Reachable: true
+Shortest Path Length: 32.3137
+Recommended Path Length: 33.1421
+Mean Route Risk: 0.29465
+Independent View Count: 23
+Raw Association Count: 136
+ 
+Victim ID: 14
+Position: 33  29
+Vitality Index: 0.47234
+Priority Score: 0.55829
+Priority Level: HIGH
+Rescue Rank: 5
+Reachable: true
+Shortest Path Length: 40.2132
+Recommended Path Length: 60.3137
+Mean Route Risk: 0.20968
+Independent View Count: 18
+Raw Association Count: 70
+======================================
+
+====================================================
+DASHBOARD MISSION COMPLETED
+Mission ID: MISSION_1789216838517_S700
+====================================================

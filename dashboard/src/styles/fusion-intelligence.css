@@ -1,0 +1,14 @@
+.fusion-intelligence__empty { color: var(--muted); padding: 32px 8px; text-align: center; }
+.fusion-intelligence__context { margin: -2px 0 12px; color: var(--muted); font-size: .72rem; line-height: 1.5; }
+.fusion-intelligence__summary { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 13px; }
+.fusion-intelligence__summary > div { padding: 11px 12px; border: 1px solid var(--border); border-radius: 8px; background: #0b1524; }
+.fusion-intelligence__label { display: block; color: var(--muted); font-size: .67rem; margin-bottom: 5px; }
+.fusion-intelligence__score { color: var(--cyan); font-size: 1.15rem; }
+.fusion-intelligence__score--secondary { color: #93c5fd; }
+.fusion-intelligence__meter { height: 7px; overflow: hidden; border-radius: 999px; background: #17243a; margin-bottom: 14px; }
+.fusion-intelligence__meter span { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #0e7490, #22d3ee); transition: width .25s ease; }
+.fusion-intelligence__table-wrapper { overflow-x: auto; }
+.fusion-intelligence__table { width: 100%; border-collapse: collapse; font-size: .74rem; }
+.fusion-intelligence__table th, .fusion-intelligence__table td { padding: 9px 7px; border-bottom: 1px solid var(--border); color: var(--text-soft); text-align: right; }
+.fusion-intelligence__table th:first-child { text-align: left; }
+.fusion-intelligence__table thead th { color: var(--muted); font-size: .63rem; text-transform: uppercase; letter-spacing: .04em; }

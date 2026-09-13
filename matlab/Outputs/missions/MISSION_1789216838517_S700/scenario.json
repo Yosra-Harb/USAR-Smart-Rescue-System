@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.0",
+  "contractType": "scenario",
+  "missionId": "MISSION_1789216838517_S700",
+  "scenarioType": "Custom",
+  "randomSeed": 700,
+  "gridSize": [
+    50,
+    50
+  ],
+  "parameters": {
+    "numVictims": 5,
+    "debrisDensity": 1,
+    "noiseLevel": 1,
+    "burialDepth": 1,
+    "vitalStrength": 1
+  },
+  "environmentSummary": {
+    "meanDebris": 0.256225379850263,
+    "meanNoise": 0.60147082157086318,
+    "obstacleFraction": 0.1328,
+    "meanAccessibility": 0.669623457882155,
+    "meanRisk": 0.34745647438141675
+  },
+  "entryPoint": {
+    "row": 50,
+    "column": 1,
+    "x": 1,
+    "y": 50
+  },
+  "exitPoint": {
+    "row": 1,
+    "column": 50,
+    "x": 50,
+    "y": 1
+  },
+  "groundTruthHidden": true
+}

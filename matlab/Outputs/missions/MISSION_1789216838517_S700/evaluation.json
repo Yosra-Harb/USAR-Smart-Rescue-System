@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "1.0",
+  "contractType": "mission-evaluation",
+  "missionId": "MISSION_1789216838517_S700",
+  "evaluationOnly": true,
+  "releasePolicy": "POST_MISSION_ONLY",
+  "counts": {
+    "groundTruthVictims": 5,
+    "systemDetections": 5,
+    "truePositives": 5,
+    "falsePositives": 0,
+    "falseNegatives": 0
+  },
+  "detection": {
+    "precision": 1,
+    "recall": 1,
+    "f1Score": 1,
+    "criticalSuccessIndex": 1,
+    "falseDiscoveryRate": 0,
+    "falseNegativeRate": 0
+  },
+  "localization": {
+    "matchedVictimCount": 5,
+    "meanError": 0.847213595499958,
+    "rmse": 1.3416407864998738,
+    "medianError": 0,
+    "maximumError": 2.23606797749979,
+    "matchedErrors": [
+      0,
+      0,
+      0,
+      2,
+      2.23606797749979
+    ]
+  },
+  "positions": {
+    "coordinateOrder": "xy",
+    "groundTruth": [
+      [
+        30,
+        44
+      ],
+      [
+        21,
+        11
+      ],
+      [
+        42,
+        33
+      ],
+      [
+        31,
+        32
+      ],
+      [
+        19,
+        27
+      ]
+    ],
+    "detected": [
+      [
+        19,
+        27
+      ],
+      [
+        42,
+        33
+      ],
+      [
+        21,
+        11
+      ],
+      [
+        30,
+        42
+      ],
+      [
+        29,
+        33
+      ]
+    ]
+  },
+  "rescue": {
+    "victimCount": 5,
+    "reachableVictimCount": 5,
+    "meanRecommendedPathLength": 47.487720036002514,
+    "meanRecommendedRouteRisk": 0.21508424745714255
+  }
+}

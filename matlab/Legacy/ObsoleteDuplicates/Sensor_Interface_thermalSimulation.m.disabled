@@ -1,0 +1,27 @@
+function thermalValue = thermalSimulation(scenario, probe)
+%% ============================================================
+% Function Name : thermalSimulation
+%
+% Description :
+% محاكاة الحساس الحراري.
+%% ============================================================
+
+r = probe.position(1);
+c = probe.position(2);
+
+B = scenario.environment.burialDepth(r,c);
+
+D = scenario.environment.debris(r,c);
+
+N = scenario.environment.noise(r,c);
+
+V = scenario.environment.vitalSigns(r,c);
+
+thermalValue = ...
+    V .* exp(-3*B) .* ...
+    (1-D) .* ...
+    (1-N);
+
+thermalValue = max(0,min(1,thermalValue));
+
+end

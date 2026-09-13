@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "contractType": "mission-evaluation",
+  "missionId": "MISSION_1789306608994_S2",
+  "evaluationOnly": true,
+  "releasePolicy": "POST_MISSION_ONLY",
+  "counts": {
+    "groundTruthVictims": 1,
+    "systemDetections": 1,
+    "truePositives": 1,
+    "falsePositives": 0,
+    "falseNegatives": 0
+  },
+  "detection": {
+    "precision": 1,
+    "recall": 1,
+    "f1Score": 1,
+    "criticalSuccessIndex": 1,
+    "falseDiscoveryRate": 0,
+    "falseNegativeRate": 0
+  },
+  "localization": {
+    "matchedVictimCount": 1,
+    "meanError": 1,
+    "rmse": 1,
+    "medianError": 1,
+    "maximumError": 1,
+    "matchedErrors": 1
+  },
+  "positions": {
+    "coordinateOrder": "xy",
+    "groundTruth": [
+      7,
+      33
+    ],
+    "detected": [
+      7,
+      32
+    ]
+  },
+  "rescue": {
+    "victimCount": 1,
+    "reachableVictimCount": 1,
+    "meanRecommendedPathLength": 20.485281374238571,
+    "meanRecommendedRouteRisk": 0.069460311448134235
+  }
+}

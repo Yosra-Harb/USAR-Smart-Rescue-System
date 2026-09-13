@@ -1,0 +1,38 @@
+.operational-map-widget {
+  width: 100%; padding: 18px; background: linear-gradient(180deg, #0d1727, #09111e);
+  border: 1px solid var(--border); border-radius: 14px; box-shadow: var(--shadow);
+}
+.widget-header { margin-bottom: 16px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.widget-header h3 { margin: 0; color: var(--text); font-size: 1rem; font-weight: 700; }
+.widget-header p { margin-top: 4px; color: var(--muted); font-size: .78rem; }
+.ground-truth-toggle { padding: 8px 12px; border: 1px solid rgba(168,85,247,.45); border-radius: 8px; background: rgba(168,85,247,.08); color: #d8b4fe; font-size: .8rem; font-weight: 650; cursor: pointer; }
+.ground-truth-toggle[aria-pressed="true"] { background: rgba(168,85,247,.22); color: #f3e8ff; }
+.ground-truth-toggle:disabled { border-color: var(--border); background: #0b1321; color: #51627a; cursor: not-allowed; }
+.operational-map { width: 100%; min-height: 530px; display: flex; gap: 18px; }
+.map-canvas { flex: 1; min-width: 0; min-height: 530px; position: relative; overflow: hidden; border: 1px solid #20324a; border-radius: 12px; background: radial-gradient(circle at 50% 40%, #13243a 0%, #0a1422 45%, #07101c 100%); }
+.openlayers-map { width: 100%; height: 100%; background: transparent; }
+.grid-labels-top { position: absolute; top: 7px; left: 44px; right: 18px; display: flex; justify-content: space-between; color: #60738e; font-size: .68rem; font-weight: 700; pointer-events: none; }
+.grid-labels-left { position: absolute; left: 9px; top: 34px; bottom: 32px; display: flex; flex-direction: column; justify-content: space-between; color: #60738e; font-size: .68rem; font-weight: 700; pointer-events: none; }
+.north-arrow { position: absolute; top: 18px; right: 18px; display: flex; flex-direction: column; align-items: center; gap: 3px; user-select: none; }
+.north-label { color: #a8bacf; font-size: .78rem; font-weight: 700; }
+.scale-bar { position: absolute; left: 18px; bottom: 15px; display: flex; flex-direction: column; gap: 5px; user-select: none; }
+.scale-line { width: 105px; height: 6px; display: flex; border: 1px solid #9db1c8; }
+.scale-segment { flex: 1; }
+.scale-segment.dark { background: #9db1c8; }
+.scale-segment.light { background: #18263a; }
+.scale-labels { display: flex; justify-content: space-between; color: #8fa2ba; font-size: .68rem; font-weight: 600; }
+.map-live-label { position: absolute; top: 16px; left: 16px; display: inline-flex; align-items: center; gap: 7px; padding: 6px 9px; border: 1px solid rgba(34,211,238,.25); border-radius: 7px; background: rgba(5,9,20,.76); color: #baf8ff; font-size: .64rem; font-weight: 750; letter-spacing: .08em; }
+.map-live-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 10px rgba(34,211,238,.95); }
+@media (max-width: 1000px) { .operational-map { flex-direction: column; } .victim-list { width: 100%; border-left: 0; border-top: 1px solid var(--border); padding-left: 0; padding-top: 16px; } }
+.map-route-legend { position: absolute; right: 14px; bottom: 14px; display: grid; grid-template-columns: 1fr 1fr; gap: 5px 12px; padding: 8px 10px; border: 1px solid rgba(75, 99, 128, .5); border-radius: 8px; background: rgba(4, 10, 20, .82); color: #a9b9ca; font-size: .62rem; font-weight: 650; pointer-events: none; }
+.map-route-legend span { display: flex; align-items: center; gap: 6px; white-space: nowrap; }
+.legend-swatch { width: 10px; height: 10px; display: inline-block; border-radius: 50%; }
+.legend-swatch.obstacle { border-radius: 2px; background: rgba(100,116,139,.9); }
+.legend-swatch.route { width: 18px; height: 3px; border-radius: 99px; }
+.legend-swatch.route.recommended { background: #c084fc; }
+.legend-swatch.route.shortest { background: repeating-linear-gradient(90deg,#f59e0b 0 5px,transparent 5px 8px); }
+.legend-swatch.probe { width: 18px; height: 2px; border-radius: 0; background: rgba(34,211,238,.55); }
+.legend-swatch.victim { background: #ef4444; outline: 2px solid #f8fafc; outline-offset: 1px; }
+.legend-swatch.truth { background: transparent; border: 2px dashed #e9d5ff; }
+.legend-swatch.start { background: #22c55e; }
+.legend-swatch.access { background: #22d3ee; border: 1px solid #f8fafc; }

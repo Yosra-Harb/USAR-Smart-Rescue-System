@@ -1,0 +1,26 @@
+.mission-workspace { display: flex; flex-direction: column; gap: 18px; }
+.mission-connection-bar {
+  display: flex; align-items: center; gap: 10px; min-height: 34px;
+  padding: 8px 12px; border: 1px solid rgba(34,211,238,.18); border-radius: 9px;
+  background: rgba(34,211,238,.045); color: var(--muted); font-size: .75rem;
+}
+.mission-connection-bar strong { color: var(--cyan); letter-spacing: .09em; font-size: .7rem; }
+.mission-connection-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--green); box-shadow: 0 0 12px rgba(34,197,94,.9); }
+.mission-connection-sequence { margin-left: auto; color: var(--text-soft); font-variant-numeric: tabular-nums; }
+.workspace-map { width: 100%; }
+.workspace-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 18px; align-items: start; }
+.mission-workspace--state { min-height: 420px; align-items: center; justify-content: center; }
+.mission-data-state {
+  width: min(100%, 540px); padding: 44px 32px; display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center;
+  background: #0c1524; border: 1px solid var(--border); border-radius: 14px; box-shadow: var(--shadow);
+}
+.mission-data-state h2 { color: var(--text); font-size: 1.2rem; }
+.mission-data-state p { max-width: 440px; color: var(--muted); line-height: 1.65; }
+.mission-data-state__spinner, .mission-data-state__symbol { width: 48px; height: 48px; display: inline-flex; align-items: center; justify-content: center; }
+.mission-data-state__spinner { border: 4px solid #183047; border-top-color: var(--cyan); border-radius: 50%; animation: mission-data-state-spin .8s linear infinite; }
+.mission-data-state__symbol { border-radius: 50%; background: #162235; color: var(--text-soft); font-size: 1.5rem; font-weight: 700; }
+.mission-data-state--error { border-color: rgba(239,68,68,.45); }
+.mission-data-state--error .mission-data-state__symbol { background: rgba(239,68,68,.12); color: #fca5a5; }
+.mission-data-state__action { min-width: 112px; padding: 10px 18px; border: 1px solid rgba(34,211,238,.35); border-radius: 8px; background: #0e7490; color: #ecfeff; font-weight: 650; cursor: pointer; }
+@keyframes mission-data-state-spin { to { transform: rotate(360deg); } }
+@media (max-width: 1100px) { .workspace-grid { grid-template-columns: 1fr; } }

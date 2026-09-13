@@ -1,0 +1,10 @@
+{
+  "schemaVersion": "1.0",
+  "scenarioType": "Custom",
+  "randomSeed": 700,
+  "numVictims": 5,
+  "debrisDensity": 1.0,
+  "noiseLevel": 1.0,
+  "burialDepth": 1.0,
+  "vitalStrength": 1.0
+}

@@ -1,0 +1,57 @@
+
+====================================================
+DASHBOARD-STARTED USAR MISSION
+====================================================
+Request File: C:/Users/TOP/Downloads/USAR_EndToEnd_v2_1_RouteCandidate/matlab/Integration/DashboardRequests/RUN_46A5E4C7F47B.json
+Scenario    : DenseDebris
+Max Vital = 0.8
+Scenario validation passed successfully.
+ 
+========== FUSION HISTORY ==========
+Fusion History Size: 1790
+Maximum Fusion Score: 0.54516
+Mean Fusion Score: 0.028876
+====================================
+ 
+========== PERFORMANCE REPORT ==========
+Ground Truth Victims       : 1
+System Detections          : 1
+True Positives             : 1
+False Positives            : 0
+False Negatives            : 0
+Critical Success Index     : 1.0000
+Precision                  : 1.0000
+Recall                     : 1.0000
+F1 Score                   : 1.0000
+False Discovery Rate       : 0.0000
+False Negative Rate        : 0.0000
+False Alarms Per Mission   : 0
+Conventional FAR          : N/A (TN is undefined)
+Conventional Accuracy     : N/A (TN is undefined)
+Localization Error          : 1.0000
+Mean Priority               : 0.73504
+Maximum Priority            : 0.89727
+Minimum Priority            : 0.24742
+========================================
+ 
+========== DETECTED VICTIMS ==========
+Number of Valid Victims: 1
+ 
+Victim ID: 7
+Position: 32   7
+Vitality Index: 0.48092
+Priority Score: 0.62874
+Priority Level: HIGH
+Rescue Rank: 1
+Reachable: true
+Shortest Path Length: 20.4853
+Recommended Path Length: 20.4853
+Mean Route Risk: 0.06946
+Independent View Count: 22
+Raw Association Count: 122
+======================================
+
+====================================================
+DASHBOARD MISSION COMPLETED
+Mission ID: MISSION_1789305424978_S2
+====================================================

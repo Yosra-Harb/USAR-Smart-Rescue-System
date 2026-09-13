@@ -1,0 +1,28 @@
+function victims = rankVictims(victims)
+%% ============================================================
+% Function Name : rankVictims
+%
+% Description :
+% ترتيب الضحايا تنازلياً حسب درجة الأولوية.
+%
+% الضحية ذات Priority Score الأعلى تظهر أولاً.
+%% ============================================================
+
+if isempty(victims)
+    return;
+end
+
+scores = zeros(length(victims),1);
+
+for k = 1:length(victims)
+
+    scores(k) = ...
+        victims(k).priorityScore;
+
+end
+
+[~,idx] = sort(scores,'descend');
+
+victims = victims(idx);
+
+end

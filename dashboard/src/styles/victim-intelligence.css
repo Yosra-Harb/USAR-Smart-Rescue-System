@@ -1,0 +1,5 @@
+.victim-intelligence__empty { color: var(--muted); padding: 30px 8px; text-align: center; }
+.victim-intelligence__metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; }
+.victim-intelligence__metric { padding: 10px; border: 1px solid var(--border); border-radius: 8px; background: #0a1422; }
+.victim-intelligence__metric span { display: block; color: var(--muted); font-size: .67rem; margin-bottom: 5px; }
+.victim-intelligence__metric strong { color: var(--text-soft); font-size: .78rem; word-break: break-word; }

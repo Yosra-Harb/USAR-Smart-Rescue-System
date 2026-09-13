@@ -1,0 +1,9 @@
+.sensor-readings { display: flex; flex-direction: column; gap: 9px; }
+.sensor-readings__empty { color: var(--muted); padding: 32px 8px; text-align: center; }
+.sensor-item { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 11px 12px; border: 1px solid var(--border); border-radius: 8px; background: #0b1524; }
+.sensor-item span { display: block; color: var(--text-soft); font-size: .8rem; font-weight: 650; }
+.sensor-item small { display: block; margin-top: 4px; color: var(--muted); font-size: .65rem; }
+.sensor-item__values { text-align: right; }
+.sensor-item__values strong, .sensor-item--quality strong { display: block; color: #dffbff; font-size: .82rem; font-weight: 700; }
+.sensor-item__values em { display: block; margin-top: 3px; color: var(--muted); font-size: .62rem; font-style: normal; }
+.sensor-item--quality { border-color: rgba(34,211,238,.18); }

@@ -1,0 +1,16 @@
+function decision = probeDecisionEngine( ...
+    vitalityPacket, ...
+    probe)
+%% ============================================================
+% Function Name : probeDecisionEngine
+%
+% Description :
+% واجهة بين Vitality Layer و Decision Layer.
+%% ============================================================
+
+decision = decisionEngine( ...
+    vitalityPacket.fusionScore, ...
+    vitalityPacket.vitalityIndex, ...
+    probe.localSearch.active);
+
+end

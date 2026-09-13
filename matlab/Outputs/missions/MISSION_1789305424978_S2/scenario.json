@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.0",
+  "contractType": "scenario",
+  "missionId": "MISSION_1789305424978_S2",
+  "scenarioType": "DenseDebris",
+  "randomSeed": 2,
+  "gridSize": [
+    50,
+    50
+  ],
+  "parameters": {
+    "numVictims": 1,
+    "debrisDensity": 0.8,
+    "noiseLevel": 0.3,
+    "burialDepth": 0.6,
+    "vitalStrength": 0.8
+  },
+  "environmentSummary": {
+    "meanDebris": 0.14834907961981442,
+    "meanNoise": 0.2328517015265183,
+    "obstacleFraction": 0.1332,
+    "meanAccessibility": 0.74984757725340723,
+    "meanRisk": 0.17218495822984409
+  },
+  "entryPoint": {
+    "row": 50,
+    "column": 1,
+    "x": 1,
+    "y": 50
+  },
+  "exitPoint": {
+    "row": 1,
+    "column": 50,
+    "x": 50,
+    "y": 1
+  },
+  "groundTruthHidden": true
+}

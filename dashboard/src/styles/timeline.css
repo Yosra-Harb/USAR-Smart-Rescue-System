@@ -1,0 +1,21 @@
+.mission-timeline { max-height: 350px; margin: 0; padding: 0 7px 0 0; list-style: none; overflow-y: auto; }
+.mission-timeline__item { position: relative; padding-left: 25px; }
+.mission-timeline__item:not(:last-child) { padding-bottom: 16px; }
+.mission-timeline__item::before { content: ""; position: absolute; top: 10px; bottom: -9px; left: 6px; width: 1px; background: #26364c; }
+.mission-timeline__item:last-child::before { display: none; }
+.mission-timeline__marker { position: absolute; top: 5px; left: 1px; z-index: 1; width: 11px; height: 11px; border: 2px solid #0b1220; border-radius: 50%; background: #64748b; box-shadow: 0 0 0 1px #30415a; }
+.mission-timeline__marker--mission { background: var(--cyan); }
+.mission-timeline__marker--detection { background: var(--amber); }
+.mission-timeline__marker--assessment { background: var(--blue); }
+.mission-timeline__marker--decision { background: var(--green); }
+.mission-timeline__marker--system { background: var(--purple); }
+.mission-timeline__entry { width: 100%; padding: 0; border: 0; background: transparent; color: inherit; font: inherit; text-align: left; }
+button.mission-timeline__entry { cursor: pointer; }
+button.mission-timeline__entry:hover .mission-timeline__title { color: var(--cyan); }
+.mission-timeline__entry--selected { padding: 9px; margin: -9px; border-radius: 8px; background: rgba(34,211,238,.06); }
+.mission-timeline__meta { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; margin-bottom: 4px; }
+.mission-timeline__time { color: #91a4bc; font-size: .7rem; font-variant-numeric: tabular-nums; font-weight: 700; }
+.mission-timeline__category { padding: 2px 6px; border-radius: 999px; background: #162338; color: #90a3bb; font-size: .58rem; font-weight: 750; letter-spacing: .04em; }
+.mission-timeline__title { color: var(--text-soft); font-size: .82rem; line-height: 1.4; }
+.mission-timeline__description { margin-top: 3px; color: var(--muted); font-size: .72rem; line-height: 1.45; }
+.mission-timeline__empty { padding: 34px 12px; color: var(--muted); text-align: center; }

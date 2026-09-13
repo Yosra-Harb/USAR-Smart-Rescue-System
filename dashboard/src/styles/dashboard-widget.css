@@ -1,0 +1,16 @@
+.dashboard-widget {
+  background: linear-gradient(180deg, rgba(16, 26, 43, 0.96), rgba(11, 18, 32, 0.96));
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 19px;
+  min-height: 250px;
+  box-shadow: var(--shadow);
+}
+.dashboard-widget-header { margin-bottom: 18px; }
+.dashboard-widget-header h3 {
+  color: var(--text);
+  font-size: 0.98rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.dashboard-widget-body { height: 100%; }

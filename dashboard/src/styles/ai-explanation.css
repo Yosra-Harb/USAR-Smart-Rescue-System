@@ -1,0 +1,3 @@
+.ai-explanation { margin-top: 14px; padding: 14px 15px; border-radius: 9px; background: rgba(34,211,238,.045); border-left: 3px solid var(--cyan); }
+.ai-explanation h4 { margin-bottom: 7px; color: #a5f3fc; font-size: .8rem; }
+.ai-explanation p { line-height: 1.65; color: var(--muted); font-size: .8rem; }
